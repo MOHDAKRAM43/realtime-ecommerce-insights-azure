@@ -70,18 +70,18 @@ The architecture below illustrates how real-time e-commerce order events flow fr
 ## 📁 Project Structure
 
 real-time-ecommerce-insights-azure/
-├──Architecture/
-│   └── architecture.png           # Renamed for web-standard lowercase
-├── databricks_notebooks/          # Standard naming for Databricks repos
-│   ├── 01_bronze_ingestion.py     # Renamed for clarity on the Medallion step
+├── Architecture/
+│   └── architecture.png
+├── CICD/
+│   └── git_setup.sh
+├── databricks_notebooks/
+│   ├── 01_bronze_ingestion.py
 │   ├── 02_silver_transformation.py
 │   └── 03_gold_aggregation.py
-├── simulator/                           # "Source" - for the data simulator
-│   └── order_simulator.py         
-├── power BI/                       # More professional than "Power BI"
+├── power_bi/                       # Removed space for script compatibility
 │   └── sales_dashboard.pbix
-├── CICD/                       # For utility/CLI scripts
-│   └── git_setup.sh
+├── simulator/
+│   └── order_simulator.py
 └── README.md
 
 
@@ -214,7 +214,15 @@ This project demonstrates real-world data engineering skills including streaming
 ---
 ⭐ If you found this project helpful, feel free to star the repository and connect!
 
-🔗 Linkedin: (https://www.linkedin.com/in/mohd-akram-6a210a259/)
-📧 Gmail: (imakram7860@gmail.com)
+## 📬 Connect With Me
+
+I’m always open to discussions around **Data Engineering, Azure, Real-Time Analytics**, and learning opportunities.
+
+🔗 **LinkedIn**:  
+[https://www.linkedin.com/in/mohd-akram-6a210a259/]
+
+📧 **Email**:  
+[imakram7860@gmail.com]
+
 
 
