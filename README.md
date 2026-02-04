@@ -72,10 +72,10 @@ The architecture below illustrates how real-time e-commerce order events flow fr
 real-time-ecommerce-insights-azure/
 ├── Architecture/architecture.png
 ├── CICD/git_setup.sh
+├── power_bi/sales_dashboard.pbix
 ├── databricks_notebooks/01_bronze_ingestion.py
 ├── databricks_notebooks/02_silver_transformation.py
 ├── databricks_notebooks/03_gold_aggregation.py
-├── power_bi/sales_dashboard.pbix
 ├── simulator/order_simulator.py
 └── README.md
 ```
@@ -206,11 +206,11 @@ git push origin main
 ✔️ Azure-native & scalable architecture
 ✔️ Streaming + Delta Lake + BI integration
 ✔️ Minute-level insights for business teams
----
+
 ```
 This project demonstrates real-world data engineering skills including streaming ingestion, distributed processing, data modeling, and analytics delivery
 ```
----
+
 ⭐ If you found this project helpful, feel free to star the repository and connect!
 
 ## 📬 Connect With Me
