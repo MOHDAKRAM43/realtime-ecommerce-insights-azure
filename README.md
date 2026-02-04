@@ -70,28 +70,20 @@ The architecture below illustrates how real-time e-commerce order events flow fr
 ## 📁 Project Structure
 
 real-time-ecommerce-insights-azure/
-│
-├── Architecture/
-│ └── Architecture.png
-|
-├── CICD/
-│ └── git_commands.sh
-|
-├── Power BI/
-│ └── ecommerce_sales_dashboard.pbix
-|
-├── databricks_notebooks/
-│ ├── 01_stream_orders_to_bronze.py
-│ ├── 02_cleaned_values_silver.py
-│ └── 03_aggregated_to_gold.py
-│
-├── Simulator/
-│ └── generate_orders.py
-|
+├──Architecture/
+│   └── architecture.png           # Renamed for web-standard lowercase
+├── databricks_notebooks/          # Standard naming for Databricks repos
+│   ├── 01_bronze_ingestion.py     # Renamed for clarity on the Medallion step
+│   ├── 02_silver_transformation.py
+│   └── 03_gold_aggregation.py
+├── simulator/                           # "Source" - for the data simulator
+│   └── order_simulator.py         
+├── power BI/                       # More professional than "Power BI"
+│   └── sales_dashboard.pbix
+├── CICD/                       # For utility/CLI scripts
+│   └── git_setup.sh
 └── README.md
 
-
----
 
 ## 🧪 Step 1: Data Simulation & Event Streaming
 
@@ -111,13 +103,14 @@ A Python-based simulator continuously generates **fake U.S. e-commerce orders** 
 - Sends events every second
 - Uses `send_batch()` for efficient streaming
 - Built using `azure-eventhub` SDK
-
+```
 ### 🪛 Setup Commands
 ```bash
 pip install azure-eventhub
 git add Simulator/
 git commit -m "Added real-time U.S. e-commerce order simulator"
 ---
+```
 🔁 Step 2: Real-Time Processing in Databricks
 Structured Streaming is used to build a three-layer Delta Lake pipeline.
 
@@ -151,6 +144,7 @@ Groups by state, product, and timestamp
 Stores business-ready metrics
 
 git commit -m "Aggregated Silver data to Gold layer (minute-level)"
+```
 ---
 🗃️ Step 3: Azure Blob Storage (Delta Lake)
 All layers are stored in Delta format inside Azure Blob Storage:
@@ -163,6 +157,7 @@ Streaming writes continuously update Delta tables
 Gold layer acts as the single source of truth for analytics
 
 ---
+```
 ### 📊Step 4: Power BI Dashboard
 
 Here’s a screenshot of the final **Power BI dashboard**, visualizing U.S. e-commerce sales analytics:
@@ -179,7 +174,7 @@ Visual Type	Description
 📄 Table	Raw aggregated data sorted by highest sales
 
 ---
-
+```
 Power BI connects directly to the Gold Delta table via Databricks SQL Warehouse.
 
 🔌 Connection Steps
@@ -193,6 +188,7 @@ Loaded Gold Delta table
 
 git commit -m "Power BI dashboard with real-time U.S. sales insights"
 ---
+```
 🔗 Git Version Control Strategy
 Used Git CLI throughout the project
 
@@ -206,13 +202,14 @@ git init
 git add .
 git commit -m "Initial project setup"
 git push origin main
+```
 ---
 ✅ Final Outcome
 ✔️ End-to-end real-time analytics pipeline
 ✔️ Azure-native & scalable architecture
 ✔️ Streaming + Delta Lake + BI integration
 ✔️ Minute-level insights for business teams
-
+---
 This project demonstrates real-world data engineering skills including streaming ingestion, distributed processing, data modeling, and analytics delivery.
 ---
 ⭐ If you found this project helpful, feel free to star the repository and connect!
