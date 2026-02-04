@@ -213,12 +213,19 @@ This project demonstrates real-world data engineering skills including streaming
 ⭐ If you found this project helpful, feel free to star the repository and connect!
 
 
-I’m always open to discussions around **Data Engineering, Azure, Real-Time Analytics**, and learning opportunities.
+## **🔗 Connect With Me**
 
-📩 Contact Information
-🔗 LinkedIn: (linkedin.com/in/mohd-akram-6a210a259/)
+Feel free to reach out for discussions around **Data Engineering, Azure, Real-Time Analytics**, or collaboration opportunities.
 
-📧 Email: (imakram7860@gmail.com)
+🔗 **GitHub**  
+https://github.com/MOHDAKRAM43
+
+💼 **LinkedIn**  
+https://www.linkedin.com/in/mohd-akram-6a210a259/
+
+📧 **Email**  
+mailto:imakram7860@gmail.com
+
 
 
 
