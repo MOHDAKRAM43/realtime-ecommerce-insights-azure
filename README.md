@@ -66,7 +66,7 @@ The architecture below illustrates how real-time e-commerce order events flow fr
 - **Power BI** connects to the SQL endpoint to deliver real-time dashboards for business users.
 
 ---
-
+```
 ## 📁 Project Structure
 
 real-time-ecommerce-insights-azure/
@@ -78,7 +78,7 @@ real-time-ecommerce-insights-azure/
 ├── power_bi/sales_dashboard.pbix
 ├── simulator/order_simulator.py
 └── README.md
-
+```
 
 ## 🧪 Step 1: Data Simulation & Event Streaming
 
