@@ -151,7 +151,6 @@ Streaming writes continuously update Delta tables
 
 Gold layer acts as the single source of truth for analytics
 
----
 ```
 ### 📊Step 4: Power BI Dashboard
 
@@ -213,7 +212,6 @@ This project demonstrates real-world data engineering skills including streaming
 
 ⭐ If you found this project helpful, feel free to star the repository and connect!
 
-## 📬 Connect With Me
 
 I’m always open to discussions around **Data Engineering, Azure, Real-Time Analytics**, and learning opportunities.
 
