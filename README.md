@@ -71,17 +71,22 @@ The architecture below illustrates how real-time e-commerce order events flow fr
 
 real-time-ecommerce-insights-azure/
 ├── Architecture/
-│   └── architecture.png
+│ └── architecture.png
+│
 ├── CICD/
-│   └── git_setup.sh
+│ └── git_setup.sh
+│
 ├── databricks_notebooks/
-│   ├── 01_bronze_ingestion.py
-│   ├── 02_silver_transformation.py
-│   └── 03_gold_aggregation.py
-├── power_bi/                       # Removed space for script compatibility
-│   └── sales_dashboard.pbix
+│ ├── 01_bronze_ingestion.py
+│ ├── 02_silver_transformation.py
+│ └── 03_gold_aggregation.py
+│
+├── power_bi/
+│ └── sales_dashboard.pbix
+│
 ├── simulator/
-│   └── order_simulator.py
+│ └── order_simulator.py
+│
 └── README.md
 
 
@@ -187,6 +192,7 @@ Authenticated using access token
 Loaded Gold Delta table
 
 git commit -m "Power BI dashboard with real-time U.S. sales insights"
+```
 ---
 ```
 🔗 Git Version Control Strategy
@@ -204,13 +210,16 @@ git commit -m "Initial project setup"
 git push origin main
 ```
 ---
+```
 ✅ Final Outcome
 ✔️ End-to-end real-time analytics pipeline
 ✔️ Azure-native & scalable architecture
 ✔️ Streaming + Delta Lake + BI integration
 ✔️ Minute-level insights for business teams
 ---
-This project demonstrates real-world data engineering skills including streaming ingestion, distributed processing, data modeling, and analytics delivery.
+```
+This project demonstrates real-world data engineering skills including streaming ingestion, distributed processing, data modeling, and analytics delivery
+```
 ---
 ⭐ If you found this project helpful, feel free to star the repository and connect!
 
